@@ -27,7 +27,7 @@ curl -XPOST localhost:8000/api/token/ -F 'username=<a_django_username>' -F 'pass
 curl -XPOST localhost:8000/api/token/refresh/ -F 'refresh=<obtained_refresh_token>'
 ```
 
-- GET - <your_django_host>[:\<port\>]/demo | For testing the JWT demo. (Needs the obtained token string in bearer auth)
+- GET - <your_django_host>[:\<port\>]/demo/ | For testing the JWT demo. (Needs the obtained token string in bearer auth)
 
 ```bash
 curl localhost:8000/demo/ -H 'Authorization: Bearer <obtained_access_token>'
