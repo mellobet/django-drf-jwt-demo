@@ -34,6 +34,6 @@ curl localhost:8000/demo/ -H 'Authorization: Bearer <obtained_access_token>'
 ```
 
 
-**Don't forget to change the SECRET_KEY value in django settings file if you are planning to use this code as the boilerplate in some project. This key is used for sign the JWTs by default.**
+**Don't forget to change the SECRET_KEY value in django settings file if you are planning to use this code as the boilerplate for some project. This key is used for sign the JWTs by default.**
 
 https://www.buymeacoffee.com/awantagrde
