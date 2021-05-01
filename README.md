@@ -9,5 +9,4 @@ Views:
 
 **Don't forget to change the SECRET_KEY value in django settings file if are planning to use this code as the boilerplate in some project. This key is used for sign the JWTs by default.**
 
-Mario Llobet.
 https://www.buymeacoffee.com/awantagrde
