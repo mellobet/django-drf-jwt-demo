@@ -128,6 +128,5 @@ REST_FRAMEWORK = {
 
 # Optional settings for JWT.
 SIMPLE_JWT = {
-    
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
 }
