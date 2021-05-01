@@ -9,7 +9,7 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 ./manage.py migrate
-./manage.py createsuperuser --username <a_django_user>
+./manage.py createsuperuser --username <a_django_username>
 ./manage.py runserver
 ```
 
