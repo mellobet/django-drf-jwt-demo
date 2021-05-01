@@ -15,19 +15,19 @@ pip install -r requirements.txt
 
 ## Views:
 
-- POST - <your_django_host>[\:<port>]/api/token/ | To obtain the initial tokens, both access and refresh. (Needs the username and password in the request form)
+- POST - <your_django_host>[:\<port\>]/api/token/ | To obtain the initial tokens, both access and refresh. (Needs the username and password in the request form)
 
 ```bash
 curl -XPOST localhost:8000/api/token/ -F 'username=<a_django_username>' -F 'password=<a_django_pass>'
 ```
 
-- POST - <your_django_host>[\:<port>]/api/token/refresh/ | To refresh your token. (Needs the previously obtained refresh token)
+- POST - <your_django_host>[:\<port\>]/api/token/refresh/ | To refresh your token. (Needs the previously obtained refresh token)
 
 ```bash
 curl -XPOST localhost:8000/api/token/refresh/ -F 'refresh=<obtained_refresh_token>'
 ```
 
-- GET - <your_django_host>[\:<port>]/demo | For testing the JWT demo. (Needs the obtained token string in bearer auth)
+- GET - <your_django_host>[:\<port\>]/demo | For testing the JWT demo. (Needs the obtained token string in bearer auth)
 
 ```bash
 curl localhost:8000/demo/ -H 'Authorization: Bearer <obtained_access_token>'
